@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+
+.FLL-image{
+  background: url("../images/FLL-PERFIL.png") no-repeat;
+  background-size: contain;
+}
+.FTC-image{
+  background: url("../images/FTC-PERFIL.png") no-repeat;
+  background-size: contain;
+}
+.FRC-image{
+  background: url("../images/FRC-PERFIL.png") no-repeat;
+  background-size: contain;
+}
+
+.link-team{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  text-decoration: none;
+  color: black;
+  font: bold 15pt Arial;
+  transition: all .4s;
+  border-radius: 10px;
+  padding: 8px;
+  width: 98%;
+  background: rgba(255, 120, 37, 0.7);
+  text-transform: uppercase;
+  &:hover{
+    color: rgb(255, 255, 255);
+    background: rgba(130, 0, 0, 0.9);
+    text-decoration: underline;
+  }
+}
+
+.team-inter{
+  border: 2px solid rgba(147, 0, 0, 0.655); /* rgba(134, 1, 1, 0.705) */
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(239, 144, 54, 0.3);
+  margin: 30px 5px;
+  display: flex;
+  flex-direction: column;
+
+  & header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.main-lines{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: justify;
+  margin: 15px auto;
+  border-bottom: 2px solid white;
+  padding: 3px;
+
+  & h2{
+    font: normal 15pt "Montserrat";
+    color: black;
+    margin: 10px auto;
+  }
+
+}
+
+.foot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(120, 0, 0, .9);
+  padding: 10px;
+  color: white;
+  font-size: 15pt;
+  font-family: sans-serif;
+  & #link-tree{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  & #icon{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: url("../images/link-tree-icon-50.svg") no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+  & a{
+    color: white;
+    text-decoration: none;
+  }
+}
+
+
+.lego-title{
+  background: url("../images/FIRSTLego_IconVert_RGB.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 130px;
+  height: 110px;
+}
+
+.tech-title{
+  background: url("../images/FIRSTTech_IconVert_RGB.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 130px;
+  height: 110px;
+}
+
+.robotics-title{
+  background: url("../images/FIRSTRobotics_IconVert_RGB.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 130px;
+  height: 110px;
+}

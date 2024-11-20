@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body, html {
+    height: 100dvh;
+    background: transparent;
+}
+
+.head{
+    background: linear-gradient(to right, rgb(10, 0, 0), rgb(50, 0, 0), rgb(80, 0, 0), rgb(50, 0, 0), rgb(10, 0, 0));
+    background-size: 600% 100%;
+    animation: gradientAnimation 1s linear infinite;
+    /* background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(60, 0, 0) 40%, rgb(0, 0, 0) 60%); */
+}
+ 
+.title{
+    font: bold 30pt "Montserrat";
+    transition: all 2.2s;
+}
+  
+.subtitle{
+    font: normal 15pt "Arial";
+    transition: all 2.2s;
+}
+  
+.load-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border-right-color: transparent;
+    gap: 3px;
+  
+& .ball{
+    animation: loading 1s linear infinite;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+  
+& .b1{
+    background: red;
+}
+  
+& .b2{
+    background: orange;
+    animation-delay: -.32s;
+}
+  
+& .b3{
+    background: yellow;
+    animation-delay: .32s;
+}
+}
+  
+@keyframes loading{
+0%{
+    transform: translateY(0px);
+}
+50%{
+    transform: translateY(5px);
+}
+}
+  
+/* 
+@keyframes loading{
+    to{
+        transform: rotate(360deg);
+    }
+} */
+  
+.divH{
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/fundo-cabecalho-bg.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all .7s;
+    overflow: hidden;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, .6);
+    
+}
+    
+.closeT{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 1s;
+    backdrop-filter: blur(7px);
+    & h1, h2{
+      background: linear-gradient(to right, white, yellow, rgb(255, 140, 0), yellow, white);
+      background-clip: text;
+      color: transparent;
+    }
+}
+  
+.startedT{
+    backdrop-filter: blur(0px);
+}
+  
+.none-class{
+    display: none;
+}
+  
+.open-class{
+    & .perfil{
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin: auto 10px;
+    }
+}
+    
+/* KeyFrames */
+
+@keyframes gradientAnimation {
+    0% {
+        background-position-x: 100%;
+    }
+
+    100%{
+        background-position-x: 0%;
+    }
+}
